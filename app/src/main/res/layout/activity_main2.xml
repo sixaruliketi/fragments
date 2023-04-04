@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity2">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/goToActivity1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="go to Activity 2"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav_menu"
         android:layout_width="match_parent"
@@ -24,7 +35,7 @@
         app:layout_constraintBottom_toTopOf="@+id/bottom_nav_menu"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/goToActivity1"
         app:navGraph="@navigation/nav_graph_2" />
 
 
